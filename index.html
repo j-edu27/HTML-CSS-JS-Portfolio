@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5+CSS3 Site</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font-family: 'Ubuntu', sans-serif; -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/scrollomatic.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/prefixfree.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a.scroll").scrollomatic();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="#home" class="scroll">
+            <div id="logo"></div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#content" class="scroll">Home</a></li>
+                <li><a href="#themes" class="scroll">Themes</a></li>
+                <li><a href="#galerie" class="scroll">Galerie</a></li>
+                <li><a href="#contact" class="scroll">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="content">
+        <video autoplay loop preload="auto">
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.ogv" type="video/ogv">
+            <source src="video/video.webm" type="video/webm">
+            <p>Video format not supported by this browser</p>
+        </video>
+        <section id="home">
+            <div id="baloon"></div>
+            <h2>Welcome to my formular created with <span>HTML5 & CSS3</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem aliquid quos adipisci quidem
+                accusamus maxime ut officia voluptatum voluptas similique libero, veritatis aspernatur deleniti
+                cupiditate! At, provident animi. Architecto, voluptatum!</p>
+            <a href="#themes" class="scroll">Learn more</a>
+            <div id="down"></div>
+        </section>
+        <section id="themes">
+            <h3>Themes</h3>
+            <article>
+                <div id="image1"></div>
+                <h4>Subtitle level 4</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam iste amet ipsam dignissimos dolore
+                    assumenda.</p>
+                <a href="">Read more</a>
+                <div id="image2"></div>
+                <h4>Subtitle level 4</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam iste amet ipsam dignissimos dolore
+                    assumenda.</p>
+                <a href="">Read more</a>
+                <div id="image3"></div>
+                <h4>Subtitle level 4</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam iste amet ipsam dignissimos dolore
+                    assumenda.</p>
+                <a href="">Read more</a>
+            </article>
+        </section>
+        <section id="galerie">
+            <h3>Galerie</h3>
+            <div id="photos">
+                <a href="#" title="Image1"><img src="img/1.jpg" alt="Image1"></a>
+                <a href="#" title="Image2"><img src="img/2.jpg" alt="Image2"></a>
+                <a href="#" title="Image3"><img src="img/3.jpg" alt="Image3"></a>
+                <a href="#" title="Image4"><img src="img/4.jpg" alt="Image4"></a>
+                <a href="#" title="Image5"><img src="img/5.jpg" alt="Image5"></a>
+                <a href="#" title="Image6"><img src="img/6.jpg" alt="Image6"></a>
+                <a href="#" title="Image7"><img src="img/7.jpg" alt="Image7"></a>
+                <a href="#" title="Image8"><img src="img/8.jpg" alt="Image8"></a>
+                <a href="#" title="Image9"><img src="img/9.jpg" alt="Image9"></a>
+            </div>
+        </section>
+        <section id="contact">
+            <h3>Contact</h3>
+            <div id="formular">
+                <form action="" method="post">
+                    <input type="text" name="Name" id="" placeholder="Name" required>
+                    <input type="email" name="Email" id="" placeholder="Email" required>
+                    <input type="tel" name="Phone" id="" placeholder="Phone" required
+                        pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{4}$" title="Please use the following format 'XXX XXX XXXX'">
+                    <textarea name="Message" cols="30" rows="10" required placeholder="Message"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19598.915805682114!2d8.6513928!3d52.1185946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1689586684906!5m2!1sde!2sde"
+                    width="400" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <a href="#content" class="up scroll"></a>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2023 Eduardo Villanueva - All rights reserved</p>
+        </footer>
+    </main>
+</body>
+
+</html>
